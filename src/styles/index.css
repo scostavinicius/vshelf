@@ -1,0 +1,103 @@
+:root {
+	/* FONT SIZES */
+	--small-font-size: 0.75rem;
+	--medium-font-size: 1rem;
+	--giant-font-size: 2.5rem;
+
+	/* FONT COLORS */
+	--font-dark-color: black;
+	--font-gray-color: rgba(190, 190, 190, 0.6);
+	--font-light-gray-color: #cfcfcf;
+	--font-light-color: white;
+
+	/* FONT WEIGHTS */
+	--font-semi-bold: 600;
+
+	/* INPUT BORDER RADIUS */
+	--input-border-radius: 0.5rem;
+
+	/* COLORS */
+	--border-color: #1c2424;
+	--std-bg-color: #080a0b;
+}
+
+.open-sans-600 {
+	font-family: "Open Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: "wdth" 100;
+}
+
+.nunito-sans-500 {
+	font-family: "Nunito Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 500;
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-sans-600 {
+	font-family: "Nunito Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 600;
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+.nunito-sans-700 {
+	font-family: "Nunito Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+/* RESET CSS */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html,
+body {
+	height: 100%;
+	font-family: Arial, sans-serif;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+	display: block;
+	max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+button {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+	color: inherit;
+}
+
+ul,
+ol {
+	list-style: none;
+}
