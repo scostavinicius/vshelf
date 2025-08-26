@@ -1,0 +1,41 @@
+.search-page {
+	background: var(--bg-color);
+	color: white;
+	width: 100vw;
+	min-height: 100vh;
+}
+
+.search-page h1 {
+	padding: 0 0 0 2rem;
+}
+
+.search-page__media-wrapper {
+	padding: 2rem;
+}
+
+.search-page__media-wrapper h2 {
+	padding: 0 0 1rem 0;
+}
+
+.search-page__media-wrapper h2 span {
+	color: var(--font-light-gray-color);
+	font-weight: 400;
+}
+
+.search-page__media {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, 10rem);
+	gap: 1rem;
+}
+
+.search-page__card {
+	width: 100%;
+	aspect-ratio: 2 / 3;
+}
+
+@media (max-width: 719px) {
+	.search-page__media {
+		justify-content: center;
+	}
+}

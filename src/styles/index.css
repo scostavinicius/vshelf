@@ -2,13 +2,15 @@
 	/* FONT SIZES */
 	--small-font-size: 0.75rem;
 	--medium-font-size: 1rem;
+	--large-font-size: 1.5rem;
+	--x-large-font-size: 2rem;
 	--giant-font-size: 2.5rem;
 
 	/* FONT COLORS */
 	--font-dark-color: black;
 	--font-gray-color: rgba(190, 190, 190, 0.6);
 	--font-light-gray-color: #cfcfcf;
-	--font-light-color: white;
+	--light-color: white;
 
 	/* FONT WEIGHTS */
 	--font-semi-bold: 600;
@@ -18,39 +20,10 @@
 
 	/* COLORS */
 	--border-color: #1c2424;
-	--std-bg-color: #080a0b;
-}
+	--bg-color: #080a0b;
 
-.open-sans-600 {
-	font-family: "Open Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
-	font-variation-settings: "wdth" 100;
-}
-
-.nunito-sans-500 {
-	font-family: "Nunito Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 500;
-	font-style: normal;
-	font-variation-settings: "wdth" 100, "YTLC" 500;
-}
-
-.nunito-sans-600 {
-	font-family: "Nunito Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 600;
-	font-style: normal;
-	font-variation-settings: "wdth" 100, "YTLC" 500;
-}
-
-.nunito-sans-700 {
-	font-family: "Nunito Sans", sans-serif;
-	font-optical-sizing: auto;
-	font-weight: 700;
-	font-style: normal;
-	font-variation-settings: "wdth" 100, "YTLC" 500;
+	/* Z-INDEX */
+	--common-zi: 0;
 }
 
 /* RESET CSS */
@@ -63,13 +36,29 @@
 html,
 body {
 	height: 100%;
-	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+
+	font-family: "Nunito Sans", sans-serif;
+	font-optical-sizing: auto;
+	font-style: normal;
+	font-variation-settings: "wdth" 100, "YTLC" 500;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
 }
 
 body {
 	line-height: 1.5;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
+
+	overflow-x: hidden;
+	overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+	display: none;
 }
 
 img,

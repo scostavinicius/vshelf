@@ -1,0 +1,48 @@
+.scroller__header,
+.scroller .swiper {
+	position: relative;
+	z-index: 2 !important;
+}
+
+.scroller__header {
+	padding: 1rem;
+}
+
+.scroller .swiper {
+	width: 100%;
+	padding: 0 0 1rem 0;
+	overflow: visible !important;
+	color: white;
+}
+
+.scroller .swiper-button-prev,
+.scroller .swiper-button-next {
+	top: 1.4rem;
+	width: 5rem;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.scroller .swiper-button-prev {
+	left: 0;
+	background: linear-gradient(to right, var(--bg-color), transparent);
+}
+
+.scroller .swiper-button-next:hover,
+.scroller .swiper-button-prev:hover {
+	opacity: 1;
+}
+
+.scroller .swiper-button-next {
+	right: 0;
+	background: linear-gradient(to left, var(--bg-color), transparent);
+}
+
+.scroller .swiper-button-prev::after,
+.scroller .swiper-button-next::after {
+	position: relative;
+	font-size: x-large;
+	color: var(--light-color);
+	opacity: 1 !important;
+}

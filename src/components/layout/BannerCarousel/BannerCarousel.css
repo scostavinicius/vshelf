@@ -1,0 +1,139 @@
+/* SWIPER */
+
+.banner-carousel .swiper {
+	position: relative;
+	width: 100%;
+	overflow: visible !important;
+	color: white;
+	z-index: 2 !important;
+	height: 80vh;
+}
+
+.banner-carousel .swiper-pagination {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.banner-carousel .swiper-pagination-bullet {
+	position: relative;
+	min-width: 0.25rem;
+	min-height: 0.25rem;
+	border-radius: 50%;
+	background-color: white;
+	margin: 0 0.5rem;
+	overflow: hidden;
+}
+
+.banner-carousel .swiper-pagination-bullet-active {
+	background-color: transparent !important;
+	min-width: 1.5rem;
+	border-radius: 1rem !important;
+}
+
+.banner-carousel .bullet-progress {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 0%;
+	height: 100%;
+	background-color: white;
+	transition: width 5s ease-in-out;
+}
+
+.banner-carousel .swiper-pagination-bullet-active .bullet-progress {
+	width: 100%;
+}
+
+/* END SWIPER */
+
+.banner-img {
+	position: absolute;
+	top: 0;
+	width: 100vw;
+	height: 120vh;
+	object-fit: cover;
+
+	-webkit-mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+	mask-image: linear-gradient(to bottom, black 80%, transparent 100%);
+}
+
+.banner-body {
+	position: absolute;
+	padding: 0 0 1.5rem 2rem;
+	bottom: 0;
+}
+
+.banner-body__title {
+	font-size: var(--giant-font-size);
+	line-height: 3rem;
+}
+
+.banner__info {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	height: 1.5rem;
+	gap: 1rem;
+}
+
+.banner__info-genre {
+	transform: scale(0.9);
+	opacity: 0.9;
+}
+
+.banner__info-avaliation {
+	display: flex;
+	flex-direction: row;
+	gap: 0.5rem;
+}
+
+.avaliation__icon-wrapper {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.avaliation__icon {
+	color: #f5c518;
+	font-size: 1.5rem;
+	width: 1.5rem;
+	height: 1.5rem;
+}
+
+.avaliation__score {
+	transform: scale(0.8);
+	opacity: 0.9;
+}
+
+.banner-btn {
+	display: flex;
+	flex-direction: row;
+	gap: 1rem;
+	height: 3rem;
+	padding-top: 0.75rem;
+}
+
+@media (max-width: 768px) {
+	.banner-carousel .swiper-button-prev::after,
+	.banner-carousel .swiper-button-next::after {
+		color: transparent;
+	}
+}
+
+@media (min-width: 768px) {
+	.banner-carousel .swiper-button-prev::after,
+	.banner-carousel .swiper-button-next::after {
+		color: var(--light-color);
+	}
+
+	.banner-carousel .swiper-pagination {
+		justify-content: flex-end;
+	}
+
+	.banner-carousel .swiper-pagination-bullet {
+		right: 2rem;
+	}
+}

@@ -1,0 +1,40 @@
+.circle-progress {
+	position: relative;
+}
+
+.circle-progress__extern {
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	background: #000;
+}
+
+.circle-progress__intern-wrapper {
+	position: absolute;
+	top: 5px;
+	left: 5px;
+}
+
+.circle-progress__intern {
+	position: relative;
+}
+
+.circle-progress__value {
+	width: 70px;
+	height: 70px;
+	border-radius: 50%;
+}
+
+.circle-progress__center {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	top: 5px;
+	left: 5px;
+	border-radius: 50%;
+	background: #000;
+	z-index: 1;
+}

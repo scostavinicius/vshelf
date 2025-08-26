@@ -1,0 +1,26 @@
+.layout {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+	color: var(--light-color);
+
+	overflow-x: hidden;
+
+	scrollbar-width: none;
+	-ms-overflow-style: none;
+}
+
+.layout::-webkit-scrollbar {
+	display: none;
+}
+
+.content {
+	position: relative;
+	width: 100%;
+	background: var(--bg-color);
+	z-index: 1;
+}
+
+.feed-wrapper {
+	padding-top: 1rem;
+}

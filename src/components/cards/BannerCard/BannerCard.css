@@ -1,0 +1,9 @@
+.banner-card {
+	height: auto;
+	transition: transform 0.2s ease-in-out;
+	z-index: 3;
+}
+
+.banner-card:hover {
+	transform: scale(1.1);
+}
