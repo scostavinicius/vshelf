@@ -1,11 +1,11 @@
 import { useEffect, useState } from "react";
 
 import "./Home.css";
-import { getMovieList, getTvList } from "../../../services/tmdbApi";
-import BannerCarousel from "../../layout/BannerCarousel/BannerCarousel";
-import Scroller from "../../layout/Scroller/Scroller";
-import Header from "../../layout/Header/Header";
-import PosterCard from "../../cards/PosterCard/PosterCard";
+import { getMovieList, getTvList } from "../../services/tmdbApi";
+import BannerCarousel from "../../components/layout/BannerCarousel/BannerCarousel";
+import Scroller from "../../components/layout/Scroller/Scroller";
+import Header from "../../components/layout/Header/Header";
+import PosterCard from "../../components/cards/PosterCard/PosterCard";
 
 function Home() {
 	const [nowPlaying, setNowPlaying] = useState([]);

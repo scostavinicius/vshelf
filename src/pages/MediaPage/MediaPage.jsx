@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 
 import "./MediaPage.css";
-import { getMedia } from "../../../services/tmdbApi";
+import { getMedia } from "../../services/tmdbApi";
 import MediaPageHeader from "./MediaPageHeader/MediaPageHeader";
 
 const MediaPage = () => {

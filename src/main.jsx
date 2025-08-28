@@ -4,9 +4,9 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import "./styles/index.css";
 import "./styles/fonts.css";
-import Home from "./components/pages/Home/Home";
-import MediaPage from "./components/pages/MediaPage/MediaPage";
-import SearchPage from "./components/pages/SearchPage/SearchPage";
+import Home from "./pages/Home/Home";
+import MediaPage from "./pages/MediaPage/MediaPage";
+import SearchPage from "./pages/SearchPage/SearchPage";
 
 import { register } from "swiper/element/bundle";
 register();

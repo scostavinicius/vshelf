@@ -1,7 +1,7 @@
 import "./MediaPageHeader.css";
-import { getImageUrl } from "../../../../services/tmdbApi";
-import CircleProgress from "../../../common/CircleProgress/CircleProgress";
-import Header from "../../../layout/Header/Header";
+import { getImageUrl } from "../../../services/tmdbApi";
+import CircleProgress from "../../../components/common/CircleProgress/CircleProgress";
+import Header from "../../../components/layout/Header/Header";
 
 function minutesToHours(minutes) {
 	return `${parseInt(minutes / 60)}h ${minutes % 60}m`;

@@ -3,9 +3,9 @@ import {
 	getMovieSearch,
 	// getMultiSearch,
 	getTvSearch,
-} from "../../../services/tmdbApi";
-import Header from "../../layout/Header/Header";
-import PosterCard from "../../cards/PosterCard/PosterCard";
+} from "../../services/tmdbApi";
+import Header from "../../components/layout/Header/Header";
+import PosterCard from "../../components/cards/PosterCard/PosterCard";
 
 import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
